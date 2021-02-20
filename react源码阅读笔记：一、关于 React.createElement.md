@@ -30,15 +30,10 @@ export function createElement(type, config, children) { ... }
 
    > Keeps track of the current owner.
    > The current owner is the component who should own any components that are currently being constructed.
-
-   ---
-
-   >```
-   >追踪当前所有者
-   >当前所有者是所有的正在构建的组件的根组件
-   >```
-   >
-   >
+   > ···················································
+   > 追踪当前所有者
+   > 当前所有者是所有的正在构建的组件的根组件
+   
 
    `ReactElement` 是啥????
 
