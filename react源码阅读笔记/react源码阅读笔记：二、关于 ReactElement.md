@@ -7,6 +7,7 @@ const ReactElement = function(type, key, ref, self, source, owner, props) { ... 
 ```
 
 1. `ReactElement`是个啥
+   
  ```js
   /**
     * Factory method to create a new React element. This no longer adheres to
