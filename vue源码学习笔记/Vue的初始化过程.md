@@ -36,7 +36,10 @@
 
   Vue的构造函数很简单，仅仅是使用`_init`函数进行了初始化，然后下面几行`Mixin`对`Vue`的构造函数进行了扩展。
   1. **initMixin**：混入了`init`函数
-    **`initMixin`**函数位于`src/core/instance/init.js`文件，其作用就是在Vue的原型上添加`_init`函数。
+    
+      **`initMixin`** 函数位于`src/core/instance/init.js`文件，其作用就是在Vue的原型上添加`_init`函数。
+    
+    
       1. `_init`函数先使用`mergeOptions`和`resolveConstructorOptions`函数合并了构造函数默认的`options`
 
           ```js
@@ -51,7 +54,7 @@
       2. 然后做了如下操作
 
         ------
-         ```js
+        ```js
           /**
            * 1. 挂载Vue实例的父节点$parent
            * 2. 将本实例push到父节点的$children中
@@ -92,7 +95,7 @@
            * 调用created钩子函数
            */
           callHook(vm, 'created')
-         ``` 
+        ``` 
       3. 若el选项存在，通过el挂载Vue实例
         ```js
           if (vm.$options.el) {
