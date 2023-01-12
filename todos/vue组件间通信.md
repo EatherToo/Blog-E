@@ -1,0 +1,9 @@
+1. props/events
+2. v-model/.sync
+3. ref
+4. $parent/$children
+5. $attrs/$listeners
+6. provide/inject
+7. eventBus
+8. $root
+9. vuex
