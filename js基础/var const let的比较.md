@@ -1,9 +1,8 @@
-### var const let的比较
+### var const let 的比较
 
 1. `var`: 带有变量提升，可在变量声明前使用，但是使用的时候值为`undefined`
 2. `let`: 声明块级作用域的可变变量
 3. `const`: 声明会计作用域的常量
-
 
 #### 暂时性死区
 
@@ -12,9 +11,11 @@
 使用或`let`声明变量时，只要变量在还没有声明完成前使用，就会报错
 
 ```js
-var temp = 123
+var tmp = 123
 
 {
+  console.log(tmp) // 会报错
+  // 在let tmp声明之前使用tmp的话会报错
   let tmp = 456
   console.log(tmp) // 456
 }
